@@ -19,4 +19,4 @@ This repository contains the **design files** and **simulation files** of an 8-p
 ## Mounting procedure:
 
 ## Acknowledgement:
-We are delighted if you find this projects helpful to your own study. Feel free to contact us if you have questions, suggestions, criticisms, etc. You are free to copy, share, and build on this project without notifying the authors. Citing our publications are appreciated but not required. 
+We are delighted if you find this project helpful to your own study. Feel free to contact us if you have questions, suggestions, criticisms, etc. You are free to copy, share, and build on this project without notifying the authors. Citing our publications are appreciated but not required. 
