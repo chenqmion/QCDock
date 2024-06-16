@@ -1,3 +1,5 @@
+<img src="QCD_Box.PNG" alt="Preview" width="800"/>
+
 # QCD Box
 This repository contains the **design files** and **simulation files** of an 8-port sample box designed for 10x10 mm chips.
 
@@ -23,8 +25,7 @@ This repository contains the **design files** and **simulation files** of an 8-p
 ### PCB 
 We choose ROGERS<sup>TM</sup> 4003C as the PCB material which has a typical relative dielectric constant of 3.55. Given a thickness of 0.508 mm, the track and gap widths are chosen as 0.9 mm and 0.3 mm, respectively, for achieving an 50 $\Omega$ characteristic impedance. This track width is convenient for soldering the SMA connectors. We also added 0.25 mm-diameter vias with 1 mm separation to improve the high-frequency performance of the GCPW.
 
-![RO4003C](RO4003C.png)
-*The GCPW design by MWI Calculator provided by ROGERS<sup>TM</sup>*
+\* The calculation of characteristic impedance is made by MWI Calculator provided by ROGERS<sup>TM</sup>* [see **RO4003C.png** for detail].
 
 
 
