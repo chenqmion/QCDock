@@ -39,7 +39,7 @@ The PCB is mounted inside the cavity via 4 x M2 screws with a length of 3mm. Bra
 \* Silver paste can be used to improve the electrical and thermal conductivity between the PCB and the box.
 
 ### Simulation results
-
+<img src="COMSOL/Box_EM.png" alt="Box mode" width="800"/>
 
 ## PCB design
 ### GCPW parameters
@@ -48,7 +48,7 @@ We choose ROGERS<sup>TM</sup> 4003C as the PCB material which has a typical rela
 \* The calculation of characteristic impedance is made by MWI Calculator provided by ROGERS<sup>TM</sup>* [see **RO4003C.png** for detail].
 
 ### Simulation results
-<img src="COMSOL/PCB_EM.png" alt="Preview" width="800"/>
+<img src="COMSOL/PCB_EM.png" alt="PCB mode" width="800"/>
 
 
 ## Mounting procedure:
