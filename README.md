@@ -21,8 +21,13 @@ This repository contains the **design files** and **simulation files** of an 8-p
 
 ## Box design 
 ### Cavity
+Given that the sample box will normally work in the DC -- 8GHz range, we should minimize the box size to push the first box mode as high as possible. The flange size of the SMA connectors determines the outer height of the box as 13 mm, as well as the thickness of the side wall as 4 mm. The inner width of the box is chosen as 21 mm, which will leave a space of 6 mm for wire bounding, assuming that an 10x10 mm chip is used.
 
-### Lid
+It is useful to have an empty space in the lid to push the first box mode to an even higher frequency. The size of the empty box should be half of the cavity size, saying 10.5x10.5 mm, while the height is not crucial (we choose 4.3 mm). 
+
+We also designed an empty space below the chip to (i) push the bottom ground further way to simplify the circuit design, and (ii) push the chip mode to a higher frequency. The box size is 9x9x3.2 mm in our design, leaving an 0.5 mm distance from the edge to mechanically support the chip.
+
+In the end, we designed fillet to the box to avoid concentration of EM fields at the corners.
 
 ### SMA connectors
 To achieve the best impedance match between the SMA connectors and the PCB with minimum efforts, we choose the panel-mount connectors with flat pin. There are only several products of this type available in the market. We choose the M54FM0112F07C model from Micro RF Connector, which has an 0.8mm-diameter 4mm-long impedance-matched extension that can be conveniently inserted into the box. The extruded pin is 0.8mm-wide and 1.5mm-long, which will determine the launch pad design of the PCB. 
