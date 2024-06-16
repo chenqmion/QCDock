@@ -65,5 +65,13 @@ The transmission loss is kept below 1 dB, while the crosstalk between different 
 
 ## Mounting procedure:
 
+Glue PCB with silver paste and put soldering paste to the edges of the GPCW track. 
+
+Insert the SMA connectors into the holes on the side wall and tighten them with 2 x M2 screws each. 
+
+Adjust the PCB so that the pin matches the track, and then tighten the PCB with 4 x M2 screws.
+
+Use solder ion to tough each pin to melt the solder paste (hot plate?).
+
 ## Acknowledgement:
 We are delighted if you find this project helpful to your own study. Feel free to contact us if you have questions, suggestions, criticisms, etc. You are free to copy, share, and build on this project without notifying the authors. Citing our publications is appreciated but not required. 
