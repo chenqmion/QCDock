@@ -55,6 +55,9 @@ We choose ROGERS<sup>TM</sup> 4003C as the PCB material which has a typical rela
 ### Simulation results
 <img src="COMSOL/PCB_EM.png" alt="PCB mode" width="800"/>
 
+<img src="COMSOL/PCB_S.png" alt="S parameters" width="800"/>
+
+<img src="COMSOL/PCB_Z.png" alt="Impedance" width="800"/>
 
 ## Mounting procedure:
 
