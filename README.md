@@ -59,9 +59,9 @@ We also added 0.25 mm-diameter vias with 1 mm separation to improve the high-fre
 ### Simulation results
 <img src="COMSOL/PCB_EM.png" alt="PCB mode" width="800"/>
 
-<img src="COMSOL/PCB_S.png" alt="S parameters" width="800"/>
+<img src="COMSOL/PCB_S.png" alt="S parameters" width="400"/> | <img src="COMSOL/PCB_Z.png" alt="Impedance" width="400"/>
 
-<img src="COMSOL/PCB_Z.png" alt="Impedance" width="800"/>
+The transmission loss is kept below 1 dB, while the crosstalk between different ports is less than 30 dB. However, the impedance seems to be 10 $\Omega$ mismatched at 10 GHz (should debug it).
 
 ## Mounting procedure:
 
