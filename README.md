@@ -27,6 +27,7 @@ We choose ROGERS<sup>TM</sup> 4003C as the PCB material which has a typical rela
 
 \* The calculation of characteristic impedance is made by MWI Calculator provided by ROGERS<sup>TM</sup>* [see **RO4003C.png** for detail].
 
+<img src="COMSOL/PCB_EM.png" alt="Preview" width="800"/>
 
 
 ## Mounting procedure:
