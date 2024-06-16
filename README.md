@@ -48,7 +48,11 @@ The PCB is mounted inside the cavity via 4 x M2 screws with a length of 3mm. Bra
 
 ## PCB design
 ### GCPW parameters
-We choose ROGERS<sup>TM</sup> 4003C as the PCB material which has a typical relative dielectric constant of 3.55. Given a thickness of 0.508 mm, the track and gap widths are chosen as 0.9 mm and 0.3 mm, respectively, for achieving an 50 $\Omega$ characteristic impedance. This track width is convenient for soldering the SMA connectors. We also added 0.25 mm-diameter vias with 1 mm separation to improve the high-frequency performance of the GCPW.
+We choose ROGERS<sup>TM</sup> 4003C as the PCB material which has a typical relative dielectric constant of 3.717. Given a thickness of 0.508 mm, the track and gap widths are chosen as 1 mm and 0.64 mm, respectively, for achieving an 50 $\Omega$ characteristic impedance. This track width is convenient for soldering the SMA connectors. 
+
+The wire bounding between the PCB and the chip may prefer an approximately matched size between the GCPW and the launcher. We change the track and gap widths into 0.6 mm and 0.11 mm after 2.2 mm from the edge, where an 0.7 mm-long gradual change is designed to connect the two geometries.
+
+We also added 0.25 mm-diameter vias with 1 mm separation to improve the high-frequency performance of the GCPW.
 
 \* The calculation of characteristic impedance is made by MWI Calculator provided by ROGERS<sup>TM</sup>* [see **RO4003C.png** for detail].
 
