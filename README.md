@@ -3,13 +3,16 @@
 # QCD Box
 This repository contains the **design files** and **simulation files** of an 8-port sample box designed for 10x10 mm chips.
 
-## Related works:
+## Update:
+* **20241005** Published V1.0 
 
 ## Description
 ### Design files in SOLIDWORKS<sup>TM</sup>
 * **BOX.SLDASM** is the final assembly of the sample box.
-* **BOX_A.SLDASM** and **BOX_B.SLDASM** are the box and the lid, respectively.
-* **PCB.SLDASM** is the PCB with GCPW-type transmission lines.
+* **BOX_A.SLDASM** and **BOX_B.SLDASM** are the cavity and the lid, respectively.
+* **PCB.SLDASM** is the PCB with GCPW-type transmission lines. <br>
+(This file is mainly for consistency check of the geometry. The actual PCB design files should be found in the PCB folder.)
+
 * **Chip.SLDASM** is a fake 10x10 mm chip for consistency check of the geometry.
 * **SMA.SLDASM** is a fake SMA connector for consistency check of the geometry.
 
@@ -17,7 +20,7 @@ This repository contains the **design files** and **simulation files** of an 8-p
 
 ### Simulation files in COMSOL<sup>TM</sup>
 * **Box_eigenmode.mph** simulates the box mode around 10 GHz. The lowest eigenfrequency is found at 12.17 GHz.
-* **PCB_frequencydomain.mph** simulates the scattering coefficients and the input impedance of the PCB ports. 
+* **PCB_frequencydomain.mph** simulates the scattering coefficients and the input impedance of the PCB ports.
 
 ## Box design 
 ### Cavity
@@ -25,7 +28,7 @@ Given that the sample box will normally work in the DC -- 8GHz range, we should 
 
 It is useful to have an empty space in the lid to push the first box mode to an even higher frequency. The size of the empty box should be half of the cavity size, saying 10.5x10.5 mm, while the height is not crucial (we choose 4.3 mm). 
 
-We also designed an empty space below the chip to (i) push the bottom ground further way to simplify the circuit design, and (ii) push the chip mode to a higher frequency. The box size is 9x9x3.2 mm in our design, leaving an 0.5 mm distance from the edge to mechanically support the chip.
+We also designed an empty space below the chip to push the bottom ground further way to simplify the chip design. The box size is 9x9x3.2 mm in our design, leaving an 0.5 mm distance from the edge to mechanically support the chip.
 
 In the end, we designed fillet to the box to avoid concentration of EM fields at the corners.
 
@@ -44,15 +47,28 @@ The PCB is mounted inside the cavity via 4 x M2 screws with a length of 3mm. Bra
 \* Silver paste can be used to improve the electrical and thermal conductivity between the PCB and the box.
 
 ### Simulation results
+* **The bare box mode** is obtained by using the Eigenmode simulator of COMSOL<sup>TM</sup>. Here, we define the inner side of the box as perfect electric conductor (PEC) and look for eigenmodes around 100 MHz.
+
 <img src="COMSOL/Box_EM.png" alt="Box mode" width="800"/>
+<em>Fig. 1 The fist box mode</em><br/><br/>
+
+* **Co-simulation of the box mode** is performed by adding the PCB and the chip into the cavity. The relative permittivity of the PCB and the chip are defined as 3.717 and 12.9, respectively. The (i) PCB top surface, (ii) PCB bottom surface, and (iii) chip top surface are defined as PEC.<br/>
+It is worth mentioning that a dense wirebonding between the chip ground and the PCB ground is important in the co-simulation. A floating chip ground will cause a significant drop of the bare box mode. In our simulation, we define the wirebonds as 
 
 ## PCB design
 ### GCPW parameters
-We choose ROGERS<sup>TM</sup> 4003C as the PCB material which has a typical relative dielectric constant of 3.717. Given a thickness of 0.508 mm, the track and gap widths are chosen as 1 mm and 0.64 mm, respectively, for achieving an 50 $\Omega$ characteristic impedance. This track width is convenient for soldering the SMA connectors. 
 
-The wire bounding between the PCB and the chip may prefer an approximately matched size between the GCPW and the launcher. We change the track and gap widths into 0.6 mm and 0.11 mm after 2.2 mm from the edge, where an 0.7 mm-long gradual change is designed to connect the two geometries.
+Impedance 1|Impedance 2
+:---------:|:---------:
+![](RO4003C.png)  |  ![](RO4003C.png)
 
-We also added 0.25 mm-diameter vias with 1 mm separation to improve the high-frequency performance of the GCPW.
+We choose ROGERS<sup>TM</sup> 4350B as the PCB material which has a typical relative dielectric constant of 3.717 when considering a broadband. 
+
+Given a thickness of 0.508 mm, the track and gap widths are chosen as 1 mm and 0.64 mm, respectively, for achieving an 50 $\Omega$ characteristic impedance. This track width is convenient for soldering the SMA connectors. 
+
+The wire bounding between the PCB and the chip may prefer an approximately matched size between the GCPW and the launcher. We change the track and gap widths into 0.57 mm and 0.1 mm after 2.2 mm from the edge, where an 0.7 mm-long gradual change is designed to connect the two geometries.
+
+We also added 0.25 mm-diameter vias with 0.8 mm separation alongside the GCPW to improve its impedance match. The gap between the via and the outer edge of the slot is chosen as 5mm.
 
 \* The calculation of characteristic impedance is made by MWI Calculator provided by ROGERS<sup>TM</sup>* [see **RO4003C.png** for detail].
 
