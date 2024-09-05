@@ -58,7 +58,7 @@ It is worth mentioning that a dense wirebonding between the chip ground and the 
 ## PCB design
 ### GCPW parameters
 
-Impedance 1|Impedance 2
+Impedance (w=1.00 mm, s=0.64 mm)|Impedance 2 (w=0.57 mm, s=0.10 mm)
 :---------:|:---------:
 ![](RO4003C.png)  |  ![](RO4003C.png)
 
