@@ -57,12 +57,11 @@ It is worth mentioning that a dense wirebonding between the chip ground and the 
 
 ## PCB design
 ### GCPW parameters
+We choose ROGERS<sup>TM</sup> 4350B as the PCB material which has a typical relative dielectric constant of 3.717 when considering a broadband. 
 
 Impedance (w=1.00 mm, s=0.64 mm)|Impedance 2 (w=0.57 mm, s=0.10 mm)
 :---------:|:---------:
 ![](RO4003C.png)  |  ![](RO4003C.png)
-
-We choose ROGERS<sup>TM</sup> 4350B as the PCB material which has a typical relative dielectric constant of 3.717 when considering a broadband. 
 
 Given a thickness of 0.508 mm, the track and gap widths are chosen as 1 mm and 0.64 mm, respectively, for achieving an 50 $\Omega$ characteristic impedance. This track width is convenient for soldering the SMA connectors. 
 
@@ -70,7 +69,7 @@ The wire bounding between the PCB and the chip may prefer an approximately match
 
 We also added 0.25 mm-diameter vias with 0.8 mm separation alongside the GCPW to improve its impedance match. The gap between the via and the outer edge of the slot is chosen as 5mm.
 
-\* The calculation of characteristic impedance is made by MWI Calculator provided by ROGERS<sup>TM</sup>* [see **RO4003C.png** for detail].
+\* The calculation of characteristic impedance is made by MWI Calculator provided by ROGERS<sup>TM</sup>*.
 
 ### Simulation results
 <img src="COMSOL/PCB_EM.png" alt="PCB mode" width="800"/>
