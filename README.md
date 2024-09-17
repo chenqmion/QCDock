@@ -1,4 +1,4 @@
-<img src="Figures/Cover_1.PNG" alt="Preview" width="900"/>
+<img src="Figures/Cover_1.png" alt="Preview" width="900"/>
 
 # QCD Box
 This repository contains the **design files** and **simulation files** of an 8-port sample box designed for 10x10 mm chips.
