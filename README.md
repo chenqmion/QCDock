@@ -1,4 +1,4 @@
-<img src="QCD_Box.PNG" alt="Preview" width="800"/>
+<img src="Figures/Cover_1.PNG" alt="Preview" width="900"/>
 
 # QCD Box
 This repository contains the **design files** and **simulation files** of an 8-port sample box designed for 10x10 mm chips.
@@ -61,7 +61,7 @@ We choose ROGERS<sup>TM</sup> 4350B as the PCB material which has a typical rela
 
 Impedance (w=1.00 mm, s=0.64 mm)|Impedance 2 (w=0.57 mm, s=0.10 mm)
 :---------:|:---------:
-![](RO4003C.png)  |  ![](RO4003C.png)
+<img src="Figures/Rogers_4350B_1.png" alt="Preview" width="450"/>  |  <img src="Figures/Rogers_4350B_2.png" alt="Preview" width="450"/>
 
 Given a thickness of 0.508 mm, the track and gap widths are chosen as 1 mm and 0.64 mm, respectively, for achieving an 50 $\Omega$ characteristic impedance. This track width is convenient for soldering the SMA connectors. 
 
