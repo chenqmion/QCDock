@@ -89,9 +89,9 @@ We first simulate the bare box modes without the PCB and the chip, as shown in F
 <em>Fig. 2 Box modes with PCB, chip, and wirebonds. Note that the box is upside down</em><br/><br/>
 Next, we add the PCB, chip, and the wirebonds for simulation. The simulation results are summarized in Fig. 2. We find that the 1st mode is pulled down to 11.303GHz due to the injection of dielectric materials of the PCB and the chip. The next modes are observed at 11.910/11.912GHz, 14.551GHz, 14.665/14.667/14.669GHz, and 16.226/16.228GHz. Here, the first 2 modes are localized to the chip, the 3rd one is approximately the PCB mode, while the last one is reminiscent to the 2nd bare box mode.
 
-We find in the simulation that the edge plating of the PCB is important to prevent a substential drop of the 1st box mode in the full simulation.
-
-a dense wirebonding between the chip ground and the PCB ground is important in the co-simulation. A floating chip ground will cause a significant drop of the bare box mode. In our simulation, we define the wirebonds as 
+<img src="Figures/COMSOL_Float.png" alt="Box mode" width="900"/>
+<em>Fig. 3 Box modes with floating chip. The upper row has widebonds but not edge plating, while the low row has edge plating without wirebonds. Note that the box is upside down</em><br/><br/>
+We find in the simulation that the edge plating of the PCB is important to prevent a substential drop of the 1st box mode in the full simulation. Figure 3 compares the cases with only wirebonds and only edge plating. In both cases, the 1st box mode drops significantly to approximately 7.5GHz. The field profile suggests different mechanisms for this drop: The mode spreads over the PCB in the former case, while it is mostly concentrated in the gap between PCB and the chip in the latter case. This observation lead to our request of edge plating when producing the PCB.
 
 ## PCB characteristics
 <img src="COMSOL/PCB_EM.png" alt="PCB mode" width="800"/>
