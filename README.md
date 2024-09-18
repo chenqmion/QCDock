@@ -82,17 +82,17 @@ We choose 2-layer PCB with 1oz copper (35um). The vias are not covered but with 
 We find in the simulation that metalization on the inner edges of PCB will significantly suppress the influence of PCB and chip on the box mode. We truncate the waveguide 0.1mm from the inner edges and 0.2mm from the outer edges to faciliate edge plating. The 4 screw holes of 2.2mm diameter are also edge plated.
 
 ## Box modes
-The box-mode simulations are performed with the eigenfrequency solver of COMSOL<sup>TM</sup>. We search for the eigenmodes around 5GHz with normal mesh size. The perfect electric conductor (PEC) condition is applied to the inner surface of the cavity, all the surfaces of PCB, and the upper surface of the chip. In addition, we define 5 wirebonds on each edge of the chip.
+The box-mode simulations are performed with the eigenfrequency solver of COMSOL<sup>TM</sup>. We search for the eigenmodes around 5GHz with normal mesh size. The perfect electric conductor (PEC) condition is applied to the inner surface of the cavity, all the surfaces of PCB, and the upper surface of the chip. In addition, we define 5 wirebonds on each edge of the chip.<br/><br/>
 
-<img src="Figures/COMSOL_Box.png" alt="Box mode" width="900"/>
+<img src="Figures/COMSOL_Box.png" width="900"/>
 <em>Fig. 1 Bare box modes. Note that the box is upside down.</em><br/><br/>
-We first simulate the bare box modes without the PCB and the chip, as shown in Fig. 1. The first 3 modes are observed at 11.524GHz, 15.838/15.841GHz, and 18.845/18.847GHz. This result indicates that the 21mmx21mm is suitable for our needs of operating the box in the 100MHz-8GHz range.
+We first simulate the bare box modes without the PCB and the chip, as shown in Fig. 1. The first 3 modes are observed at 11.524GHz, 15.838/15.841GHz, and 18.845/18.847GHz. This result indicates that the 21mmx21mm is suitable for our needs of operating the box in the 100MHz-8GHz range.<br/><br/>
 
-<img src="Figures/COMSOL_Full.png" alt="Box mode" width="900"/>
+<img src="Figures/COMSOL_Full.png" width="900"/>
 <em>Fig. 2 Box modes with PCB, chip, and wirebonds. Note that the box is upside down</em><br/><br/>
-Next, we add the PCB, chip, and the wirebonds for simulation. The simulation results are summarized in Fig. 2. We find that the 1st mode is pulled down to 11.303GHz due to the injection of dielectric materials of the PCB and the chip. The next modes are observed at 11.910/11.912GHz, 14.551GHz, 14.665/14.667/14.669GHz, and 16.226/16.228GHz. Here, the first 2 modes are localized to the chip, the 3rd one is approximately the PCB mode, while the last one is reminiscent to the 2nd bare box mode.
+Next, we add the PCB, chip, and the wirebonds for simulation. The simulation results are summarized in Fig. 2. We find that the 1st mode is pulled down to 11.303GHz due to the injection of dielectric materials of the PCB and the chip. The next modes are observed at 11.910/11.912GHz, 14.551GHz, 14.665/14.667/14.669GHz, and 16.226/16.228GHz. Here, the first 2 modes are localized to the chip, the 3rd one is approximately the PCB mode, while the last one is reminiscent to the 2nd bare box mode.<br/><br/>
 
-<img src="Figures/COMSOL_Float.png" alt="Box mode" width="900"/>
+<img src="Figures/COMSOL_Float.png" width="900"/>
 <em>Fig. 3 Box modes with floating chip. The upper row has widebonds but not edge plating, while the low row has edge plating without wirebonds. Note that the box is upside down</em><br/><br/>
 We find in the simulation that the edge plating of the PCB is important to prevent a substential drop of the 1st box mode in the full simulation. Figure 3 compares the cases with only wirebonds and only edge plating. In both cases, the 1st box mode drops significantly to approximately 7.5GHz. The field profile suggests different mechanisms for this drop: The mode spreads over the PCB in the former case, while it is mostly concentrated in the gap between PCB and the chip in the latter case. This observation lead to our request of edge plating when producing the PCB.
 
