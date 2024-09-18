@@ -65,7 +65,7 @@ We choose ROGERS<sup>TM</sup> 4350B as the PCB material which has a typical rela
 
 The 0.508mm thickness is chosen for several considerations: The major reason is that a smaller thickness can hardly support the 1mm track width as requested by the SMA connector, assuming that GCPW structure is used. A larger thickness solves this problem, but will lead to a larger geometry that is not very convenient for the chip launcher (a=300um, b=180um). The 0.508mm thickness is a sweet point we found that fulfils our needs. In addition, it is also comparable to the thickness of the (675um).
 
-Impedance (w=1.00 mm, s=0.64 mm)|Impedance 2 (w=0.57 mm, s=0.10 mm)
+Impedance (a=1.00 mm, b=0.69 mm)|Impedance 2 (a=0.56 mm, b=0.10 mm)
 :---------:|:---------:
 <img src="Figures/Rogers_4350B_1.png" alt="Preview" width="450"/>  |  <img src="Figures/Rogers_4350B_2.png" alt="Preview" width="450"/>
 
