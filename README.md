@@ -76,7 +76,7 @@ Although a bit skeptical on whether we need vias for such a short waveguide leng
 ### PCB specification
 We choose 2-layer PCB with 1oz copper (35um). The vias are not covered but with with 35um thickness of copper plating. We choose immersion sliver for surface finish because the standard process of gold plating would require Ni plating beforehand. 
 
-We found in the simulation that metalization on the inner edges of PCB will significantly suppress the influence of PCB and chip on the box mode. We truncate the waveguide 0.1mm from the inner edges and 0.2mm from the outer edges to faciliate edge plating. The 4 screw holes of 2.2mm diameter are also edge plated.
+We find in the simulation that metalization on the inner edges of PCB will significantly suppress the influence of PCB and chip on the box mode. We truncate the waveguide 0.1mm from the inner edges and 0.2mm from the outer edges to faciliate edge plating. The 4 screw holes of 2.2mm diameter are also edge plated.
 
 ## Box modes
 The box-mode simulations are performed by eigenfrequency solver of COMSOL<sup>TM</sup>. We search for the eigenmodes around 5GHz with normal mesh size. The perfect electric conductor (PEC) condition is applied to the inner surface of the cavity, all the surfaces of PCB, and the upper surface of the chip. In addition, we define 5 wirebonds on each edge of the chip.
@@ -89,18 +89,18 @@ We first simulate the bare box modes without the PCB and the chip, as shown in F
 <em>Fig. 2 Box modes with PCB, chip, and wirebonds. Note that the box is upside down</em><br/><br/>
 Next, we add the PCB, chip, and the wirebonds for simulation. The simulation results are summarized in Fig. 2. We find that the 1st mode is pulled down to 11.303GHz due to the injection of dielectric materials of the PCB and the chip. The next modes are observed at 11.910/11.912GHz, 14.551GHz, 14.665/14.667/14.669GHz, and 16.226/16.228GHz. Here, the first 2 modes are localized to the chip, the 3rd one is approximately the PCB mode, while the last one is reminiscent to the 2nd bare box mode.
 
-It is worth mentioning that the edge plating of the PCB is crucial .
+We find in the simulation that the edge plating of the PCB is important to prevent a substential drop of the 1st box mode in the full simulation.
 
 a dense wirebonding between the chip ground and the PCB ground is important in the co-simulation. A floating chip ground will cause a significant drop of the bare box mode. In our simulation, we define the wirebonds as 
 
-### Simulation results
+## PCB characteristics
 <img src="COMSOL/PCB_EM.png" alt="PCB mode" width="800"/>
 
 <img src="COMSOL/PCB_S.png" alt="S parameters" width="400"/> | <img src="COMSOL/PCB_Z.png" alt="Impedance" width="400"/>
 
 The transmission loss is kept below 1 dB, while the crosstalk between different ports is less than 30 dB. However, the impedance seems to be 10 $\Omega$ mismatched at 10 GHz (should debug it).
 
-## PCB characteristics
+
 
 
 ## Mounting procedure:
