@@ -94,7 +94,7 @@ We choose 2-layer PCB with 1oz copper (35um). The vias are not covered but with 
 We find in the simulation that metalization on the inner edges of PCB will significantly suppress the influence of PCB and chip on the box mode. We truncate the waveguide 0.1mm from the inner edges and 0.2mm from the outer edges to faciliate edge plating. The 4 screw holes of 2.2mm diameter are also edge plated.
 
 ## Box modes
-The box-mode simulations are performed by using the eigenfrequency solver of COMSOL<sup>TM</sup>. We search for the eigenmodes around 5GHz with normal mesh size. The perfect electric conductor (PEC) condition is applied to the inner surface of the cavity, all the surfaces of PCB, and the upper surface of the chip. In addition, we define 5 wirebonds on each edge of the chip.<br/><br/>
+The box-mode simulations are performed by using the Eigenmode solver of COMSOL<sup>TM</sup>. We search for the eigenmodes around 5GHz with normal mesh size. The perfect electric conductor (PEC) condition is applied to the inner surface of the cavity, all the surfaces of PCB, and the upper surface of the chip. In addition, we define 5 wirebonds on each edge of the chip.<br/><br/>
 
 <img src="Figures/COMSOL_Box.png" width="900"/>
 <em>Fig. 1 Bare box modes. Note that the box is upside down.</em><br/><br/>
@@ -111,14 +111,15 @@ We find in the simulation that the edge plating of the PCB is important to preve
 ## PCB characteristics
 <img src="Figures/ADS_1.png" width="900"/>
 <em>Fig. 4 Mesh and port definition of PCB simulation.</em><br/><br/>
-The PCB simulations are performed by using the eigenfrequency solver of Keysight ADS<sup>TM</sup>. We define the WN port as the inout port, and the rest 4 as output ports. The pin edge on the center conductor is set as 0.1mm, while it is 0.5mm on the surface ground.
+The PCB simulations are performed by using the Momentum solver of Keysight ADS<sup>TM</sup>. We define the WN port as the inout port, and the rest 4 as output ports. The pin edge on the center conductor is set as 0.1mm, while it is 0.5mm on the surface ground.
 
+We simulate the scattering coefficients of the WN waveguide, and its crosstalk to the nearest and next nearest ports. We perform the adaptive frequency sweep from 100MHz to 10GHz. The mesh is defined at the highest simulation frequency with a density of 20 per wavelength. The automatic edge mesh is enabled.
 
+<img src="Figures/ADS_1.png" width="900"/>
+<em>Fig. 5 Mesh and port definition of PCB simulation.</em><br/><br/>
+Figure 5 summarizes the simulation results.
 
 The transmission loss is kept below 1 dB, while the crosstalk between different ports is less than 30 dB. However, the impedance seems to be 10 $\Omega$ mismatched at 10 GHz (should debug it).
-
-
-
 
 ## Mounting procedure:
 <img src="Figures/Assembly_1.png" width="900"/>
