@@ -74,7 +74,10 @@ Using the ROGERS<sup>TM</sup> online MWI Calculator, we find two parameter setti
 
 Although a bit skeptical on whether we need vias for such a short waveguide length, the simulation indicates a meaningful improvement of the scattering parameters with them. We choose the via diemeter as 0.2mm. The vias are 5mm offset from the outer edge of the waveguide slot, and they are evenly spaced by 8mm. In addition, we add vias on the horizontal, vertical, diagonal, and anti-diagonal lines to separate the 8 waveguides.
 
-<img src="Figures/COMSOL_Box.png" alt="Box mode" width="900"/>
+PCB (front side)|PCB (back side)
+:---------:|:---------:
+<img src="Figures/PCB_1.png" width="450"/>  |  <img src="Figures/PCB_2.png" width="450"/>
+
 The layout is written by a homemade Python<sup>TM</sup> package, pyads. It generates the GDSII file that can be converted to the gerber files for PCB production. We find it useful to import the generated files to KiCAD<sup>TM</sup> for a 3D overview. Another benefit is that it can be directly linked to multiple online PCB producers to make the order.
 
 ### PCB specification
