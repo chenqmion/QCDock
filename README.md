@@ -36,9 +36,17 @@ This repository contains the **Design** and **Simulation** files of an 8-port sa
 
 ## Box design 
 ### Cavity
+Bottom (front side)| Bottom (back side)
+:---------:|:---------:
+<img src="Figures/bottom_1.png" width="450"/>  |  <img src="Figures/bottom_2.png" width="450"/>
+
 Given that the sample box will normally work in the 100MHz -- 8GHz range, we should minimize the box size to push the first box mode as high as possible. The flange size of the SMA connectors (12.9mm) determines the heightness of the box as 13 mm, as well as the thickness of the side wall as 4 mm. We also add r=3mm fillet for the box.
 
 The inner width of the box is chosen as 21 mm, which will leave a space of 5.5 mm for wire bounding, assuming that an 10x10 mm chip is used. This space should be enough considering that the heightness of the side walls is around 6.5mm. We also add r=2mm fillet for the cavity.
+
+Top (front side)| Top (back side)
+:---------:|:---------:
+<img src="Figures/top_1.png" width="450"/>  |  <img src="Figures/top_2.png" width="450"/>
 
 We observe from the simulation that it is useful to have an empty space in the lid to push the first box mode to an even higher frequency. The optimal size of the empty space should be 2/3 of the cavity size, saying 14x14 mm, while the height is not crucial (we choose 3.3 mm). We also add r=2mm fillet for the empty space.
 
@@ -68,7 +76,7 @@ The 0.508mm thickness is chosen for several considerations: The major reason is 
 
 Impedance (a=1.00 mm, b=0.69 mm)|Impedance 2 (a=0.56 mm, b=0.10 mm)
 :---------:|:---------:
-<img src="Figures/Rogers_4350B_1.png" alt="Preview" width="450"/>  |  <img src="Figures/Rogers_4350B_2.png" alt="Preview" width="450"/>
+<img src="Figures/Rogers_4350B_1.png" width="450"/>  |  <img src="Figures/Rogers_4350B_2.png" width="450"/>
 
 Using the ROGERS<sup>TM</sup> online MWI Calculator, we find two parameter settings that provide 50Ohm match. Close to the outer side of the PCB, we choose a=1.00mm and b=0.69mm for soldering the SMA connectors. We change the design to a=0.56mm and b=0.10mm after 1.5mm from the edge, where an additional 0.65mm taper is designed to connect the two geometries.
 
