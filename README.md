@@ -83,16 +83,15 @@ The box-mode simulations are performed by eigenfrequency solver of COMSOL<sup>TM
 
 <img src="Figures/COMSOL_Box.png" alt="Box mode" width="900"/>
 <em>Fig. 1 Bare box modes. Note that the box is upside down.</em><br/><br/>
-We first simulate the bare box modes without the PCB and the chip, as shown in Fig. 1. The first 5 modes are observed at 11.524GHz, 15.838/15.841GHz, and 18.845/18.847GHz. This result indicates that the 21mmx21mm is suitable for our needs of operating the box in the 100MHz-8GHz range.
+We first simulate the bare box modes without the PCB and the chip, as shown in Fig. 1. The first 3 modes are observed at 11.524GHz, 15.838/15.841GHz, and 18.845/18.847GHz. This result indicates that the 21mmx21mm is suitable for our needs of operating the box in the 100MHz-8GHz range.
 
 <img src="Figures/COMSOL_Box.png" alt="Box mode" width="900"/>
 <em>Fig. 2 Box modes with PCB, chip, and wirebonds. Note that the box is upside down</em><br/><br/>
-Next, we add the PCB, chip, and the wirebonds for simulation. The simulation results are summarized in Fig. 2. 
+Next, we add the PCB, chip, and the wirebonds for simulation. The simulation results are summarized in Fig. 2. We find that the 1st mode is pulled down to 11.303GHz due to the injection of dielectric materials of the PCB and the chip. The next modes are observed at 11.910/11.912GHz, 14.551GHz, 14.665/14.667/14.669GHz, and 16.226/16.228GHz. Here, the first 2 modes are localized to the chip, the 3rd one is approximately the PCB mode, while the last one is reminiscent to the 2nd bare box mode.
 
-The first 5 modes are observed at 11.524GHz, 15.838/15.841GHz, and 18.845/18.847GHz. This result indicates that the 21mmx21mm is suitable for our needs of operating the box in the 100MHz-8GHz range.
+It is worth mentioning that the edge plating of the PCB is crucial .
 
-* **Co-simulation of the box mode** is performed by adding the PCB and the chip into the cavity. The relative permittivity of the PCB and the chip are defined as 3.717 and 12.9, respectively. The (i) PCB top surface, (ii) PCB bottom surface, and (iii) chip top surface are defined as PEC.<br/>
-It is worth mentioning that a dense wirebonding between the chip ground and the PCB ground is important in the co-simulation. A floating chip ground will cause a significant drop of the bare box mode. In our simulation, we define the wirebonds as 
+a dense wirebonding between the chip ground and the PCB ground is important in the co-simulation. A floating chip ground will cause a significant drop of the bare box mode. In our simulation, we define the wirebonds as 
 
 ### Simulation results
 <img src="COMSOL/PCB_EM.png" alt="PCB mode" width="800"/>
