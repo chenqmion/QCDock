@@ -94,7 +94,7 @@ We choose 2-layer PCB with 1oz copper (35um). The vias are not covered but with 
 We find in the simulation that metalization on the inner edges of PCB will significantly suppress the influence of PCB and chip on the box mode. We truncate the waveguide 0.1mm from the inner edges and 0.2mm from the outer edges to faciliate edge plating. The 4 screw holes of 2.2mm diameter are also edge plated.
 
 ## Box modes
-The box-mode simulations are performed with the eigenfrequency solver of COMSOL<sup>TM</sup>. We search for the eigenmodes around 5GHz with normal mesh size. The perfect electric conductor (PEC) condition is applied to the inner surface of the cavity, all the surfaces of PCB, and the upper surface of the chip. In addition, we define 5 wirebonds on each edge of the chip.<br/><br/>
+The box-mode simulations are performed by using the eigenfrequency solver of COMSOL<sup>TM</sup>. We search for the eigenmodes around 5GHz with normal mesh size. The perfect electric conductor (PEC) condition is applied to the inner surface of the cavity, all the surfaces of PCB, and the upper surface of the chip. In addition, we define 5 wirebonds on each edge of the chip.<br/><br/>
 
 <img src="Figures/COMSOL_Box.png" width="900"/>
 <em>Fig. 1 Bare box modes. Note that the box is upside down.</em><br/><br/>
@@ -109,11 +109,11 @@ Next, we add the PCB, chip, and the wirebonds for simulation. The simulation res
 We find in the simulation that the edge plating of the PCB is important to prevent a substential drop of the 1st box mode in the full simulation. Figure 3 compares the cases with only wirebonds and only edge plating. In both cases, the 1st box mode drops significantly to approximately 7.5GHz. The field profile suggests different mechanisms for this drop: The mode spreads over the PCB in the former case, while it is mostly concentrated in the gap between PCB and the chip in the latter case. This observation lead to our request of edge plating when producing the PCB.
 
 ## PCB characteristics
-The PCB simulations are performed in Keysight ADS<sup>TM</sup>. We define 
+<img src="Figures/ADS_1.png" width="900"/>
+<em>Fig. 4 Mesh and port definition of PCB simulation.</em><br/><br/>
+The PCB simulations are performed by using the eigenfrequency solver of Keysight ADS<sup>TM</sup>. We define the WN port as the inout port, and the rest 4 as output ports. The pin edge on the center conductor is set as 0.1mm, while it is 0.5mm on the surface ground.
 
-<img src="COMSOL/PCB_EM.png" alt="PCB mode" width="800"/>
 
-<img src="COMSOL/PCB_S.png" alt="S parameters" width="400"/> | <img src="COMSOL/PCB_Z.png" alt="Impedance" width="400"/>
 
 The transmission loss is kept below 1 dB, while the crosstalk between different ports is less than 30 dB. However, the impedance seems to be 10 $\Omega$ mismatched at 10 GHz (should debug it).
 
