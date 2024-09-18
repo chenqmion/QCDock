@@ -121,6 +121,8 @@ The transmission loss is kept below 1 dB, while the crosstalk between different 
 
 
 ## Mounting procedure:
+<img src="Figures/Assembly_1.png" width="900"/>
+
 Spread a very thin layer of silver paste on the backside of PCB.
 
 Place PCB inside the position, align it in the center, and loosely mount it with the 4 M2x3 screws.
