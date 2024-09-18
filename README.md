@@ -79,10 +79,17 @@ We choose 2-layer PCB with 1oz copper (35um). The vias are not covered but with 
 We found in the simulation that metalization on the inner edges of PCB will significantly suppress the influence of PCB and chip on the box mode. We truncate the waveguide 0.1mm from the inner edges and 0.2mm from the outer edges to faciliate edge plating. The 4 screw holes of 2.2mm diameter are also edge plated.
 
 ## Box modes
-* **The bare box mode** is obtained by using the Eigenmode simulator of COMSOL<sup>TM</sup>. Here, we define the inner side of the box as perfect electric conductor (PEC) and look for eigenmodes around 100 MHz.
+The box-mode simulations are performed by eigenfrequency solver of COMSOL<sup>TM</sup>. We search for the eigenmodes around 5GHz with normal mesh size. The perfect electric conductor (PEC) condition is applied to the inner surface of the cavity, all the surfaces of PCB, and the upper surface of the chip. In addition, we define 5 wirebonds on each edge of the chip.
 
-<img src="COMSOL/Box_EM.png" alt="Box mode" width="800"/>
-<em>Fig. 1 The fist box mode</em><br/><br/>
+<img src="Figures/COMSOL_Box.png" alt="Box mode" width="900"/>
+<em>Fig. 1 Bare box modes. Note that the box is upside down.</em><br/><br/>
+We first simulate the bare box modes without the PCB and the chip, as shown in Fig. 1. The first 5 modes are observed at 11.524GHz, 15.838/15.841GHz, and 18.845/18.847GHz. This result indicates that the 21mmx21mm is suitable for our needs of operating the box in the 100MHz-8GHz range.
+
+<img src="Figures/COMSOL_Box.png" alt="Box mode" width="900"/>
+<em>Fig. 2 Box modes with PCB, chip, and wirebonds. Note that the box is upside down</em><br/><br/>
+Next, we add the PCB, chip, and the wirebonds for simulation. The simulation results are summarized in Fig. 2. 
+
+The first 5 modes are observed at 11.524GHz, 15.838/15.841GHz, and 18.845/18.847GHz. This result indicates that the 21mmx21mm is suitable for our needs of operating the box in the 100MHz-8GHz range.
 
 * **Co-simulation of the box mode** is performed by adding the PCB and the chip into the cavity. The relative permittivity of the PCB and the chip are defined as 3.717 and 12.9, respectively. The (i) PCB top surface, (ii) PCB bottom surface, and (iii) chip top surface are defined as PEC.<br/>
 It is worth mentioning that a dense wirebonding between the chip ground and the PCB ground is important in the co-simulation. A floating chip ground will cause a significant drop of the bare box mode. In our simulation, we define the wirebonds as 
