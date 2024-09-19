@@ -27,8 +27,8 @@ This repository contains the **Design** and **Simulation** files of an 8-port sa
 \* The **.zip** file is for production.
 
 ### Box simulation in COMSOL<sup>TM</sup>
-* **COMSOL_Box.mph** simulates the bare box mode.
-* **COMSOL_Full.mph** simulates the box mode with PCB, chip, and wire bonds.<br>
+* **COMSOL_Eigenmode_Box.mph** simulates the bare box mode.
+* **COMSOL_Eigenmode_Full.mph** simulates the box mode with PCB, chip, and wire bonds.<br>
 (This file is too large for GitHub. Check out this link to my OneDrive: [COMSOL_Full.mph](https://aaltofi-my.sharepoint.com/:u:/r/personal/qiming_chen_aalto_fi/Documents/QCDBox/COMSOL/COMSOL_Eigenmode_Full.mph?csf=1&web=1&e=xgF2ge))
 
 \* The **Geometry** subfolder contains the simplified geometry for simulation.
