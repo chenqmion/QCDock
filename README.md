@@ -29,13 +29,13 @@ This repository contains the **Design** and **Simulation** files of an 8-port sa
 ### Box simulation in COMSOL<sup>TM</sup>
 * **COMSOL_Eigenmode_Box.mph** simulates the bare box mode.
 * **COMSOL_Eigenmode_Full.mph** simulates the box mode with PCB, chip, and wire bonds.<br>
-(This file is too large for GitHub. Check out this link to my OneDrive: [COMSOL_Full.mph](https://aaltofi-my.sharepoint.com/:u:/r/personal/qiming_chen_aalto_fi/Documents/QCDBox/COMSOL/COMSOL_Eigenmode_Full.mph?csf=1&web=1&e=xgF2ge))
+(This file is too large for GitHub. Check out this link to my OneDrive: [COMSOL_Full.mph](https://aaltofi-my.sharepoint.com/:u:/g/personal/qiming_chen_aalto_fi/EXWzsTkU3fFIl8ayYfk28pIBvtJjfRmXe1LOO7rCdNtHGA?e=5WcfCN))
 
 \* The **Geometry** subfolder contains the simplified geometry for simulation.
 
 ### PCB simulation in Keysight ADS<sup>TM</sup>
 * **QCDBox_wrk.7zads** contains all the simulation files.<br>
-(This file is too large for GitHub. Check out this link to my OneDrive: [QCDBox_wrk.7zads](https://aaltofi-my.sharepoint.com/:u:/r/personal/qiming_chen_aalto_fi/Documents/QCDBox/ADS/QCDBox_wrk.7zads?csf=1&web=1&e=yMzNNP))
+(This file is too large for GitHub. Check out this link to my OneDrive: [QCDBox_wrk.7zads](https://aaltofi-my.sharepoint.com/:u:/g/personal/qiming_chen_aalto_fi/EXQFJPZ1qhZAqgtTo-mlQ24B5ay6Y2iGmYVxILdQ2sNBDQ?e=Z6ZQvW))
 
 ## Box design 
 ### Cavity
