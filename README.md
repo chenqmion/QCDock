@@ -118,11 +118,11 @@ We simulate the scattering coefficients of the WN waveguide, as well as its cros
 
 <img src="Figures/ADS_scattering.png" width="900"/>
 <em>Fig. 5 Scattering parameters.</em><br/><br/>
-Figure 5 summarizes the simulation results. The transmission and reflection rates of a single waveguide are -0.18dB and -22dB in the worst case, respectively. It indicates a good 50OHm impedance match, as can be also seen from the Smith chart. Moreover, the crosstalk between nearest and next nearest waveguides are approximately -50dB. 
+Figure 5 summarizes the simulation results. The transmission and reflection rates of a single waveguide are -0.18dB and -22dB in the worst case, respectively. It indicates a good 50OHm impedance match, as can be also seen from the Smith chart. Moreover, the crosstalk between nearest and next nearest waveguides are approximately -50dB.<br/><br/>
 
 <img src="Figures/ADS_current.png" width="900"/>
 <em>Fig. 6 Current density in dB scale.</em><br/><br/>
-We observe impedance mismatches at 3, 4.7, 6.5GHz in the scattering coefficients. However, the current density profile does not show obvious difference at these frequencies. We note that this mismatch perturbes the transmission rate by less than 0.1%, although it may look huge in the dB scale. 
+We observe impedance mismatches at 3, 4.7, 6.5GHz in the scattering coefficients. However, the current density profile does not show obvious difference at these frequencies. We note that this mismatch perturbes the transmission rate by less than 1%, although it may look huge in the dB scale. 
 
 ## Mounting procedure:
 <img src="Figures/Assembly_1.png" width="900"/>
