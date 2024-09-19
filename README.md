@@ -116,7 +116,7 @@ We mentioned before that edge plating of the PCB is important to prevent a subst
 <em>Fig. 4 Mesh and port definition for PCB simulation.</em><br/><br/>
 The PCB simulations are performed by using the Momentum solver of Keysight ADS<sup>TM</sup>. We define the WN port as the inout port, while the rest as output ports. The pin edge size connected to the center conductor is 0.1mm, while it is 0.5mm when connected to the top-face ground.
 
-We simulate the scattering coefficients of the WN waveguide, as well as its crosstalk to the nearest and next nearest waveguides. We perform the adaptive frequency sweep from 100MHz to 10GHz with maximamly 51 points. The mesh is defined at the highest simulation frequency with a density of 20 per wavelength. The automatic edge mesh is enabled and mesh reduction allowed.
+We simulate the scattering coefficients of the WN waveguide, as well as its crosstalk to the nearest and next nearest waveguides. We perform the adaptive frequency sweep from DC to 10GHz with maximamly 51 points. The mesh is defined at the highest simulation frequency with a density of 20 per wavelength. The automatic edge mesh is enabled and mesh reduction allowed.
 
 <img src="Figures/ADS_scattering.png" width="900"/>
 <em>Fig. 5 Scattering parameters.</em><br/><br/>
