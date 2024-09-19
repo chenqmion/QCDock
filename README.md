@@ -105,7 +105,7 @@ We first search for the bare box modes without the PCB and the chip. The first 3
 
 <img src="Figures/COMSOL_Full.png" width="900"/>
 <em>Fig. 2 Box modes with PCB, chip, and wire bonds. Note that the box is upside down</em><br/><br/>
-Next, we add the PCB, chip, and the wire bonds for simulation. The results are summarized in Fig. 2. We find that the 1st mode is pulled down to 11.303GHz by introducing the PCB and the chip. The next 4 modes are observed at 11.910/11.912GHz, 14.551GHz, 14.665/14.667/14.669GHz, and 16.226/16.228GHz. Here, the first 2 modes are localized to the chip, the 3rd one is approximately the PCB mode, while the last one is reminiscent to the 2nd bare box mode.<br/><br/>
+Next, we add the PCB, chip, and the wire bonds for simulation. The results are summarized in Fig. 2. We find that the 1st are box mode is pulled down to 11.303GHz by introducing the PCB and the chip. The next 4 modes are observed at 11.910/11.912GHz, 14.551GHz, 14.665/14.667/14.669GHz, and 16.226/16.228GHz. Here, the first 2 modes are mostly concentrated to the PCB, the 3rd one is approximately the under-chip cavity mode, while the last one is reminiscent to the 2nd bare box mode.<br/><br/>
 
 <img src="Figures/COMSOL_Float.png" width="900"/>
 <em>Fig. 3 Box modes with a floating chip. The upper row has widebonds but not edge plating, while the lower row has edge plating but not wire bonds. Note that the box is upside down</em><br/><br/>
