@@ -4,7 +4,8 @@
 This repository contains the **Design** and **Simulation** files of an 8-port sample box developed at QCD Labs. It is designed for 10x10 mm chips. Other chip sizes would require minor modifications of the design files, namely, the PCB and the under-chip cavity. However, chips larger than 13x13mm may encounter wire bonding difficulties.
 
 ## Update:
-* **20240919** Published V1.0 
+* **20241115** Updated mounting procedure. 
+* **20240919** Published V1.0. 
 
 ## Description
 ### Box design in SOLIDWORKS<sup>TM</sup>
@@ -129,19 +130,21 @@ We observe impedance mismatches at 3, 4.7, 6.5GHz in the scattering coefficients
 ## Mounting procedure:
 <img src="Figures/Assembly_1.png" width="900"/>
 
-Spread a rather thin layer of silver paste on the backside of PCB.
+Place PCB inside the cavity, align it to the center, and mount it with the 4 M2x3 screws (This will prevent pulling up the PCB during soldering, which is originated from the surface tension of the solder when melting).
 
-Place PCB inside the cavity, align it to the center, and loosely mount it with the 4 M2x3 screws.
-
-Spread the solder paste onto the waveguide tracks.
+Spread a very small amount of solder paste onto the waveguide tracks, then onto the tips of SMA connectors.
 
 Insert the SMA connectors into the holes on the side wall and tighten them with M2x4 screws. 
 
-Adjust the PCB so that the pin matches the track, and then tighten it with M2x3 screws.
+Check if the solder paste have a good contact between the SMA tip and the waveguide track. Use needle to add more solder paste if necessary.
 
-Tough each pin with solder ion to melt the solder paste.
+Use heat gun to melt the solder paste (Use its highest power). The solder paste starts floating in ~30s, and start turning into a shining color in ~1min. 
 
-Use multimeter to check DC connection between the SMA pin and the waveguide.
+Wait for ~10s more so that all the soldering areas looks shining and smooth. 
+
+Turn off the heat gun and use twizer to transfer the box into a cold metal plate (The box is very hot right now).
+
+Wait ~5min for cool down, then use multimeter to check DC connection between the SMA pin and the waveguide.
 
 ## Acknowledgement:
 We are delighted if you find this project helpful to your own study. Feel free to contact us if you have questions, suggestions, criticisms, etc. You are free to copy, share, and build on this project without notifying the authors. 
