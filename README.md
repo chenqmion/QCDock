@@ -1,6 +1,6 @@
 <img src="Figures/Cover_1.png" alt="Preview" width="900"/>
 
-# QCD Box
+# QCDock
 This repository contains the **Design** and **Simulation** files of an 8-port sample box developed at QCD Labs. It is designed for 10x10 mm chips. Other chip sizes would require minor modifications of the design files, namely, the PCB and the under-chip cavity. However, chips larger than 13x13mm may encounter wire bonding difficulties.
 
 ## Update:
